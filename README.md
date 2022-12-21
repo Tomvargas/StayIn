@@ -71,19 +71,19 @@ Sigue estos pasos:
 Cuando ejecutes **git push** Te pedira iniciar sesión desde la consola, ingresa tu nombre de usuario de GitHub y en contraseña debes obligatoriamente seguir estos pasos:
 
 ![fork](assets/documentacion/foto8.png)
-.
+-
 ![fork](assets/documentacion/foto9.png)
-.
+-
 ![fork](assets/documentacion/foto10.png)
-.
+-
 ![fork](assets/documentacion/foto11.png)
-.
+-
 ![fork](assets/documentacion/foto12.png)
-.
+-
 ![fork](assets/documentacion/foto13.png)
-.
+-
 ![fork](assets/documentacion/foto14.png)
-.
+-
 ![fork](assets/documentacion/foto15.png)
 
 Solo pegamos la clave generada en la terminal, (no se visualizará nada pero solo se debe dar enter), listo, se subirán tus cambios a GitHub
