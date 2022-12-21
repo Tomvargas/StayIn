@@ -39,9 +39,11 @@ Primero debes crear un Fork en GitHub:
 
 Luego verás este repositorio como tuyo en Github, Vamos a clonarlo a tu PC Local
 ![fork](assets/documentacion/foto3.png)
+
 Abre tu consola, puede ser CMD en windows y usamos los siguientes comandos:
 Dirigete a la ruta donde quieres que esté tu proyecto con el comando **cd**
 ![fork](assets/documentacion/foto4.png)
+
 Usa el comando **git clone** para clonar el repo
 > $ git clone "url que copiaste de github"
 **ejemplo:**
@@ -69,20 +71,21 @@ Sigue estos pasos:
 Cuando ejecutes **git push** Te pedira iniciar sesión desde la consola, ingresa tu nombre de usuario de GitHub y en contraseña debes obligatoriamente seguir estos pasos:
 
 ![fork](assets/documentacion/foto8.png)
-
+.
 ![fork](assets/documentacion/foto9.png)
-
+.
 ![fork](assets/documentacion/foto10.png)
-
+.
 ![fork](assets/documentacion/foto11.png)
-
+.
 ![fork](assets/documentacion/foto12.png)
-
+.
 ![fork](assets/documentacion/foto13.png)
-
+.
 ![fork](assets/documentacion/foto14.png)
-
+.
 ![fork](assets/documentacion/foto15.png)
+
 Solo pegamos la clave generada en la terminal, (no se visualizará nada pero solo se debe dar enter), listo, se subirán tus cambios a GitHub
 
 Solo queda un proceso más
