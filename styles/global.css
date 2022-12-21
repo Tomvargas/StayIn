@@ -1,0 +1,59 @@
+/*variables de colores de la página*/
+:root{
+    --primario: rgb(46 134 241);
+    --secundario: rgb(0 219 153);
+    --texto: rgb(19, 25, 28);
+    --fondo: rgb(242, 242, 242);
+}
+
+body{
+    background-color: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--texto);
+}
+
+header{
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.logo, nav, nav ul li{
+    display: inline-block;
+}
+
+.logo a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--primario);
+}
+
+nav{
+    float: right;
+    padding: 20px;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 700;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    border-bottom: solid 4px var(--primario);
+    color: var(--primario);
+    transition: .3s;
+}
+
+.active{
+    border-bottom: solid 4px var(--primario);
+    color: var(--primario);
+}
+
+.main-container{
+    padding: 0 30px;
+}
