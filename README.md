@@ -32,4 +32,5 @@ Para el proyecto debes saber estos comandos básicos de Git:
     > $ git push
 
 ## 2. Usa este repo
-
+Primero debes crear un Fork en GitHub:
+![fork](assets/documentacion/foto1.png)
