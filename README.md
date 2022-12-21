@@ -1,4 +1,5 @@
 # GUIA DE USO
+> 💡 Si ya te sabes todos estos pasos o entendiste puedes ver directamente las [instrucciones para editar el proyecto](https://github.com/Tomvargas/StayIn/blob/main/instrucciones.md).
 ## 1. Usa Git
 Primero debes instalar git en tu pc, para hacerlo debes ir a [este link](https://git-scm.com/downloads), instala el que necesite tu computadora.
 Abre tu terminal, puede ser CMD en windows y sigue estos pasos para configurarlo.
