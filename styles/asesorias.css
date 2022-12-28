@@ -5,11 +5,6 @@
     --fondo: rgb(242, 242, 242);
 }
 
-*{
-    margin:0;
-    
-    box-sizing: border-box;
-}
 .texto-principal{
     
     text-align: center;
