@@ -5,11 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
 
     <title>Hoteles | Stay In</title>
 
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/hoteles.css">
+    <style>
+        .main-container{
+            width: 90%;
+            margin: auto;
+        }
+
+        h2{
+            padding-left: 525px;
+            font-size: 62.50px;
+            color:cornflowerblue;
+            margin-bottom: 50px;
+        }
+
+        .informacion img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .informacion {
+            border: 1px solid blue;
+            padding: 10px;
+            min-width: 105px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+         /*al contenedor de le aplica display:grid*/
+         #section1{
+            display: grid;
+            grid-template-rows: 150px 150px 150px;
+            /*altura de las filas*/
+            grid-template-columns: 30% 30% 30%;
+            /* ancho de las columnas*/
+            grid-gap: 15px 20px;
+            /* distancia row column*/
+         }
+
+         .informacion:nth-child(1){
+            grid-row: 1/4;
+            grid-column: 2/4;
+         }
+
+         .informacion:nth-child(2){
+            grid-row: 4/6;
+            grid-column: 2/4;
+         }
+
+         .informacion:nth-child(3){
+            grid-row: 6/8;
+            grid-column: 2/4;
+         }
+
+         .informacion:nth-child(4){
+            grid-row: 8/10;
+            grid-column: 2/4;
+         }
+
+         .informacion:nth-child(5){
+            grid-row: 10/12;
+            grid-column: 2/4;
+         }
+
+         #ol1{
+            border: 1px solid green;
+            padding-left: 20px;
+            width: 300px;
+            height: 275px;
+            margin-left: 25px;
+            margin-top: 5px;
+            grid-row: 1/3;
+            grid-column:1/2;
+         }
+
+        #ol2{
+            border: 1px solid green;
+            padding-left: 20px;
+            width: 300px;
+            height: 150px;
+            margin-left: 25px;
+            margin-top: 5px;
+            grid-row: 3/4;
+            grid-column: 1/2;
+         }
+
+         #ol3{
+            border: 1px solid green;
+            padding-left: 50px;
+            margin-left: 25px;
+            margin-top: 5px;
+            grid-row: 4/11;
+            grid-column: 1/2;
+         }
+    </style>
+
+    <meta name="description" content="Listado de hoteles disponibles."/>
+    <meta name="keywords" content="Hoteles, Hospedaje"/>
+    <meta name="author" content="Alvarez Guashpa Pedro" />
+
+    <!--<link rel="stylesheet" href="../styles/global.css">-->
 
 </head>
 <body>
@@ -17,7 +115,7 @@
     <header>
         <h1 class="logo">
             <a href="index.html">
-                <img src="../assets/logo.png" alt="Logo de Stay In">
+                <img src=".../assets/logo.png" alt="Logo de Stay In">
                 Stay In
             </a>
         </h1>
@@ -32,8 +130,120 @@
         </nav>
     </header>
     <!-- Contenido de la página -->
-    <div class="main-container">
+    <div id="principal" class="main-container">
+
+        <h2>Hoteles</h2>
+
+        <section id="section1" class="contenido">
+            <article id="ar1" class="informacion">
+                <img src="assets/Img/Hotel uno.jpg" alt="TRYP"/>
+                <h3>TRYP by Wyndham Guayaquil </h3>
+                <p>
+                    Rodeado de restaurantes y tiendas en el corazón del distrito comercial, 
+                    el hotel TRYP by Wyndham Guayaquil ofrece un servicio de traslado gratis 
+                    al Aeropuerto José Joaquín de Olmedo de Guayaquil (GYE), a solo dos 
+                    kilómetros de distancia. Ya sea que nos visites por trabajo o por vacaciones, 
+                    disfrutarás de WiFi y estacionamiento gratis; además de una piscina, gimnasio 
+                    y restaurante en las instalaciones. 
+                </p>
+            </article>
+
+            <article id="ar2" class="informacion">           
+                <img src="assets/img/Hotel 2.jpg" alt="River" />
+                <h3>River Garden Hotel + Suites</h3>
+                <p>Varios puntos de interés se encuentran a pocos metros del hotel, incluido el Museo del 
+                    Cacao, Malecón 2000, la Iglesia San Francisco y el Mercado Artesanal. El aeropuerto más 
+                    cercano es el Aeropuerto Internacional José Joaquín de Olmedo, a 4 km de River Garden 
+                    Hotel + Suites. El hotel ofrece servicio de transporte aeropuerto-hotel gratuito.
+                </p>
+            </article>
+
+            <article id="ar3" class="informacion">
+                <img src="assets/img/Hotel cuatro.jpg" alt="DC Suites" />
+                <h3 id="n1" class="nombres">DC Suites Aeropuerto</h3>
+                <p>Situado en el barrio Simon Bolivar, DC Suites Aeropuerto Guayaquil está al lado del 
+                    Aeropuerto Internacional José Joaquín De Olmedo y a 10 minutos en coche de los Jardines 
+                    del Malecón Simón Bolívar. Los huéspedes tendrán acceso a aparcamiento gratis cerca para 
+                    mayor comodidad.
+                </p>
+            </article>
+
+            <article id="ar4" class="informacion">
+                <img src="assets/img/Hotel cinco.jpg" alt="Patrimonial" />
+                <h3>Hotel Patrimonial by Greenfield</h3>
+                <p>
+                    Un hotel ideal para los viajeros de negocio o placer que deseen desgustar de nuestro 
+                    exclusivo restaurante con platos a la carta. Planifique sus eventos sociales o 
+                    corporativos en nuestros señoriales salones del hotel. Mantenga su rutina de ejercicio 
+                    en nuestro gimnasio ó descansa en nuestra área de piscina con refrescantes bebidas 
+                    en el bar.
+                </p>
+            </article>
+
+            <article id="ar5" class="informacion">
+                <img src="assets/img/Hotel tres.jpg" alt="Holiday" />
+                <h3>Holiday Inn Guayaquil Airport, an IHG Hotel</h3>
+                <p>El Holiday Inn Guayaquil Airport se encuentra en Guayaquil. Alberga un centro de negocios, 
+                    una piscina al aire libre y un gimnasio moderno con vistas a la ciudad. Dispone de conexión 
+                    Wi-Fi gratuita y sirve un desayuno bufé. El aeropuerto internacional José Joaquín de Olmedo 
+                    queda a 4 minutos a pie.
+                </p>
+            </article>
+
             
+
+            <ol id="ol1" class="lista-filtros">
+                <h3>Tipos de alojamiento</h3>
+                <li>Departamentos</li>                
+                <li>Villas</li>
+                <li>Hoteles</li>
+                <li>Villas</li>
+                <li>Pensiones</li>
+                <li>Habitaciones en casa particulares</li>
+                <li>Casas y chalets</li>
+                <li>Bed and breakfasts</li>
+                <li>Hostels</li>
+            </ol>
+
+            <ol id="ol2" class="lista-filtros">
+                <h3>Puntos turisticos</h3>
+                <li>Cerro Santa Ana</li>                
+                <li>Faro Cerro Santa Ana</li>
+                <li>Parque Seminario</li>
+                <li>Malecon 2000</li>
+            </ol>
+
+            <ol id="ol3" class="lista-filtros">
+                <h3>Actividades recreativas</h3>
+                <li>Hidromasaje</li>                
+                <li>Baño publico</li>
+                <li>Gimnasio</li>
+                <li>Sauna</li>
+                <li>Tours a pie</li>
+                <li>Entretenimiento nocturno</li>
+                <li>Sala de vapor</li>
+                <li>Happy hour</li>
+                <li>Pileta cubierta</li>
+                <li>Cenas tematicas</li>                
+                <li>Instalaciones de Spa</li>
+                <li>Recorrido de bares</li>
+                <li>Musica o espectaculo en vivo</li>
+                <li>Ping Pong</li>
+                <li>Karaoke</li>
+                <li>Masaje en pareja</li>
+                <li>Masaje de manos</li>
+                <li>Baño al aire libre</li>
+                <li>Servicio de maquillaje</li>                
+                <li>Paquetes de Spa</li>
+                <li>Tratamientos corporales</li>
+                <li>Exfoliacion corporal</li>
+                <li>Noches de peliculas</li>
+                <li>Baño turco</li>
+                <li>Zona privada de playa</li>
+                <li>Baños termales</li>
+            </ol>
+
+        </section>
     </div>
     <!-- Footer -->
     <footer>
