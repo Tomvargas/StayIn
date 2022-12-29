@@ -5,109 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../assets/logo.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
 
     <title>Hoteles | Stay In</title>
-
-    <style>
-        .main-container{
-            width: 90%;
-            margin: auto;
-        }
-
-        h2{
-            padding-left: 525px;
-            font-size: 62.50px;
-            color:cornflowerblue;
-            margin-bottom: 50px;
-        }
-
-        .informacion img {
-            width: 200px;
-            height: 200px;
-        }
-
-        .informacion {
-            border: 1px solid blue;
-            padding: 10px;
-            min-width: 105px;
-            margin-left: 5px;
-            margin-top: 5px;
-        }
-
-         /*al contenedor de le aplica display:grid*/
-         #section1{
-            display: grid;
-            grid-template-rows: 150px 150px 150px;
-            /*altura de las filas*/
-            grid-template-columns: 30% 30% 30%;
-            /* ancho de las columnas*/
-            grid-gap: 15px 20px;
-            /* distancia row column*/
-         }
-
-         .informacion:nth-child(1){
-            grid-row: 1/4;
-            grid-column: 2/4;
-         }
-
-         .informacion:nth-child(2){
-            grid-row: 4/6;
-            grid-column: 2/4;
-         }
-
-         .informacion:nth-child(3){
-            grid-row: 6/8;
-            grid-column: 2/4;
-         }
-
-         .informacion:nth-child(4){
-            grid-row: 8/10;
-            grid-column: 2/4;
-         }
-
-         .informacion:nth-child(5){
-            grid-row: 10/12;
-            grid-column: 2/4;
-         }
-
-         #ol1{
-            border: 1px solid green;
-            padding-left: 20px;
-            width: 300px;
-            height: 275px;
-            margin-left: 25px;
-            margin-top: 5px;
-            grid-row: 1/3;
-            grid-column:1/2;
-         }
-
-        #ol2{
-            border: 1px solid green;
-            padding-left: 20px;
-            width: 300px;
-            height: 150px;
-            margin-left: 25px;
-            margin-top: 5px;
-            grid-row: 3/4;
-            grid-column: 1/2;
-         }
-
-         #ol3{
-            border: 1px solid green;
-            padding-left: 50px;
-            margin-left: 25px;
-            margin-top: 5px;
-            grid-row: 4/11;
-            grid-column: 1/2;
-         }
-    </style>
 
     <meta name="description" content="Listado de hoteles disponibles."/>
     <meta name="keywords" content="Hoteles, Hospedaje"/>
     <meta name="author" content="Alvarez Guashpa Pedro" />
 
-    <!--<link rel="stylesheet" href="../styles/global.css">-->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/hoteles.css">
 
 </head>
 <body>
@@ -115,7 +21,7 @@
     <header>
         <h1 class="logo">
             <a href="index.html">
-                <img src=".../assets/logo.png" alt="Logo de Stay In">
+                <img src="../assets/logo.png" alt="Logo de Stay In">
                 Stay In
             </a>
         </h1>
@@ -132,11 +38,11 @@
     <!-- Contenido de la página -->
     <div id="principal" class="main-container">
 
-        <h2>Hoteles</h2>
+        <h2 class="title">Hoteles</h2>
 
         <section id="section1" class="contenido">
             <article id="ar1" class="informacion">
-                <img src="assets/Img/Hotel uno.jpg" alt="TRYP"/>
+                <img src="../assets/Img/Hotel uno.jpg" alt="TRYP"/>
                 <h3>TRYP by Wyndham Guayaquil </h3>
                 <p>
                     Rodeado de restaurantes y tiendas en el corazón del distrito comercial, 
@@ -149,7 +55,7 @@
             </article>
 
             <article id="ar2" class="informacion">           
-                <img src="assets/img/Hotel 2.jpg" alt="River" />
+                <img src="../assets/Img/Hotel 2.jpg" alt="River" />
                 <h3>River Garden Hotel + Suites</h3>
                 <p>Varios puntos de interés se encuentran a pocos metros del hotel, incluido el Museo del 
                     Cacao, Malecón 2000, la Iglesia San Francisco y el Mercado Artesanal. El aeropuerto más 
@@ -159,7 +65,7 @@
             </article>
 
             <article id="ar3" class="informacion">
-                <img src="assets/img/Hotel cuatro.jpg" alt="DC Suites" />
+                <img src="../assets/Img/Hotel cuatro.jpg" alt="DC Suites" />
                 <h3 id="n1" class="nombres">DC Suites Aeropuerto</h3>
                 <p>Situado en el barrio Simon Bolivar, DC Suites Aeropuerto Guayaquil está al lado del 
                     Aeropuerto Internacional José Joaquín De Olmedo y a 10 minutos en coche de los Jardines 
@@ -169,7 +75,7 @@
             </article>
 
             <article id="ar4" class="informacion">
-                <img src="assets/img/Hotel cinco.jpg" alt="Patrimonial" />
+                <img src="../assets/Img/Hotel cinco.jpg" alt="Patrimonial" />
                 <h3>Hotel Patrimonial by Greenfield</h3>
                 <p>
                     Un hotel ideal para los viajeros de negocio o placer que deseen desgustar de nuestro 
@@ -181,7 +87,7 @@
             </article>
 
             <article id="ar5" class="informacion">
-                <img src="assets/img/Hotel tres.jpg" alt="Holiday" />
+                <img src="../assets/Img/Hotel tres.jpg" alt="Holiday" />
                 <h3>Holiday Inn Guayaquil Airport, an IHG Hotel</h3>
                 <p>El Holiday Inn Guayaquil Airport se encuentra en Guayaquil. Alberga un centro de negocios, 
                     una piscina al aire libre y un gimnasio moderno con vistas a la ciudad. Dispone de conexión 
