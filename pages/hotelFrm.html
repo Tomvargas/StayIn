@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    
+    <title>Hoteles | Stay In</title>
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/acercade.css">
+
+    <style>
+        .main-container{
+            width: 90%;
+            margin: auto;
+        }
+
+        h2{
+            padding-left: 525px;
+            font-size: 62.50px;
+            color:cornflowerblue;
+            margin-bottom: 50px;
+        }
+
+        .informacion img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .informacion {
+            border: 1px solid blue;
+            padding: 10px;
+            min-width: 105px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+         /*al contenedor de le aplica display:grid*/
+        #formReservacion{
+            display: grid;
+            grid-template-rows: 150px 150px 150px 150px 150px 150px;
+            /*altura de las filas*/
+            grid-template-columns: 30% 30% 30% 30% 30% 30% ;
+            /* ancho de las columnas*/
+            grid-gap: 15px 20px;
+            /* distancia row column*/
+         }
+
+         .informacionDestino{
+            grid-row: 1/2;
+            grid-column: 2/6;
+         }
+
+         .informacionPersonal{
+            grid-row: 2/3;
+            grid-column: 2/6;
+         }
+
+         .informacionPago{
+            grid-row: 4/5;
+            grid-column: 2/6;
+         }
+
+         .comentario{
+            grid-row: 5/6;
+            grid-column: 2/6;
+         }
+
+         .text-center{
+            grid-row: 6/7;
+            grid-column: 2/6;
+         }
+
+    </style>
+
+    <meta name="description" content="Listado de hoteles disponibles."/>
+    <meta name="keywords" content="Hoteles, Hospedaje"/>
+    <meta name="author" content="Alvarez Guashpa Pedro" />
+
+
+</head>
+
+<body>
+    
+    <!-- Header and Nav -->
+    <header>
+        <h1 class="logo">
+            <a href="index.html">
+                <img src=".../assets/logo.png" alt="Logo de Stay In">
+                Stay In
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a  class="active" href="Hoteles.html">Hoteles</a></li>
+                <li><a href="Asesorias.html">Asesorías</a></li>
+                <li><a href="Acercade.html">Acerca de</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la página -->
+
+    <div id="contenedorPrincipal">
+
+        <div id="encabezado">
+            <header>
+                <h1>Reservaci&oacute;n</h1>
+            </header>
+        </div>
+
+        <div id="contenedorContenido">
+            <h4>Llene el formulario</h4>
+
+            <div class="formularios">
+                <!-- onsubmit=return validar() PERMITE LLAMAR A LA FUNCION DE JAVASCRIPT QUE VALIDA EL FORMULARIO-->
+                <form id="formReservacion">
+                    <div class="informacionDestino">
+                        <span>
+                            <label for="destino">Destino</label>
+                            <input type="text" name="destino" id="lugar" class="formItem"/>
+                        </span>
+                        <span>
+                            <label>Fecha de Entrada</label>
+                            <input type="date" name="fechaE" id="fechaE" class="formItem"/>
+                        </span>
+                        <span>
+                            <label>Fecha de Salida</label>
+                            <input type="date" name="fechaS" id="fechaS" class="formItem"/>
+                        </span>
+                    </div>
+
+                    <div class="informacionPersonal">
+                        <div>
+                            <div>
+                                <label for="nombres">Nombres</label>
+                            </div>
+                            <div>
+                                <input type="text" name="nombres" id="nombres" class="formItem" placeholder="ingrese nombre" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="apellidos">Apellidos</label>
+                            </div>
+                            <div>
+                                <input type="text" name="apellidos" id="apellidos" class="formItem" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Numero de celular</label>
+                            </div>
+                            <div>
+                                <select name="numeroC" id="numeroC" class="formItem" >
+                                    <option value="0">Seleccione..</option>
+                                    <option value="1">Afganistan</option>
+                                    <option value="2">Albania</option>
+                                    <option value="3">Alemania</option>
+                                    <option value="4">Andorra</option>
+                                    <option value="5">Angola</option>
+                                    <option value="6">Antigua y Barbura</option>
+                                    <option value="7">...</option>
+                                    <option value="8">Ecuador</option>
+                                    <option value="9">...</option>
+                                </select>
+                                <input type="text" name="telefono" id="telefono" class="formItem" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Email</label>
+                            </div>
+                            
+                            <div>
+                                <input type="text" name="correo" id="correo" class="formItem" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="informacionPago">
+                        <div>
+                            <div>
+                                <label for="titular">Titular</label>
+                            </div>
+                            <div>
+                                <input type="text" name="titular" id="titular" class="formItem"/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="tarjeta">Numero de la tarjeta</label>
+                            </div>
+                            <div>
+                                <input type="text" name="tarjeta" id="tarjeta" class="formItem" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Fecha de vencimiento</label>
+                            </div>
+                            <div>
+                                <input type="text" name="telefono" id="telefono" class="formItem" placeholder="MM/AA"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comentario">
+                        <label>Comentarios</label> <br>
+                        <textarea class="form-control" id="texto" rows="4" cols="50" class="formItem">                              
+                        </textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                        <input type="reset" class="btn btn-primary" value="Cancelar">
+                        <!--<input type="button" class="btn btn-primary" value="Button">-->
+                   </div>
+
+                </form>
+
+            </div>
+        </div>
+        <div id="pie" class="text-center">
+            <footer>Aqui pie de p&aacute;gina</footer>
+        </div>
+    </div>
+    <!--PARA ENLAZAR EL DOCUMENTO JS EXTERNO-->
+ <!--PARA ENLAZAR EL DOCUMENTO JS EXTERNO-->
+ <script type="text/javascript" src="js/jsHotel.js">
+</script>
+
+</body>
+
+</html>
