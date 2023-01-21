@@ -39,39 +39,41 @@
         }
 
          /*al contenedor de le aplica display:grid*/
-        #formReservacion{
+         #formReservacion{
             display: grid;
-            grid-template-rows: 150px 150px 150px 150px 150px 150px;
+            /*justify-content: space-evenly;*/
+            grid-template-rows: 50px 250px 100px 150px;
             /*altura de las filas*/
-            grid-template-columns: 30% 30% 30% 30% 30% 30% ;
+            grid-template-columns: 24% 24% 23% 24%;
             /* ancho de las columnas*/
             grid-gap: 15px 20px;
             /* distancia row column*/
          }
+         
 
          .informacionDestino{
             grid-row: 1/2;
-            grid-column: 2/6;
+            grid-column: 2/4;
          }
 
          .informacionPersonal{
             grid-row: 2/3;
-            grid-column: 2/6;
+            grid-column: 2/3;
          }
 
          .informacionPago{
-            grid-row: 4/5;
-            grid-column: 2/6;
+            grid-row: 2/3;
+            grid-column: 3/4;
          }
 
          .comentario{
-            grid-row: 5/6;
-            grid-column: 2/6;
+            grid-row: 3/4;
+            grid-column: 2/4;
          }
 
          .text-center{
-            grid-row: 6/7;
-            grid-column: 2/6;
+            grid-row: 4/5;
+            grid-column: 2/4;
          }
 
     </style>
@@ -110,12 +112,13 @@
 
         <div id="encabezado">
             <header>
-                <h1>Reservaci&oacute;n</h1>
+                <h1 style="padding-left: 675px; padding-right: 675px;">Reservaci&oacute;n</h1>
             </header>
         </div>
 
         <div id="contenedorContenido">
-            <h4>Llene el formulario</h4>
+            <h3 style="padding-left: 695px; padding-right: 695px;">Llene el formulario</h3>
+            <br>
 
             <div class="formularios">
                 <!-- onsubmit=return validar() PERMITE LLAMAR A LA FUNCION DE JAVASCRIPT QUE VALIDA EL FORMULARIO-->
@@ -136,6 +139,7 @@
                     </div>
 
                     <div class="informacionPersonal">
+                        <h3>Registro</h3>
                         <div>
                             <div>
                                 <label for="nombres">Nombres</label>
@@ -184,6 +188,7 @@
                     </div>
 
                     <div class="informacionPago">
+                        <h3>Pagos</h3>
                         <div>
                             <div>
                                 <label for="titular">Titular</label>

@@ -40,9 +40,9 @@
          /*al contenedor de le aplica display:grid*/
          #section1{
             display: grid;
-            grid-template-rows: 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
             /*altura de las filas*/
-            grid-template-columns: 30% 30% 30%;
+            grid-template-columns: 30% 30% 30% 30% 30% 30% 30% 30% 30%;
             /* ancho de las columnas*/
             grid-gap: 15px 20px;
             /* distancia row column*/
@@ -73,36 +73,43 @@
             grid-column: 2/4;
          }
 
-         /*#ol1{
-            border: 1px solid green;
+         #alojamiento{
+            /*border: 1px solid green;
             padding-left: 20px;
             width: 300px;
             height: 275px;
             margin-left: 25px;
-            margin-top: 5px;
+            margin-top: 5px;*/
             grid-row: 1/3;
             grid-column:1/2;
          }
 
-        #ol2{
-            border: 1px solid green;
+        #turistico{
+            /*border: 1px solid green;
             padding-left: 20px;
             width: 300px;
             height: 150px;
             margin-left: 25px;
-            margin-top: 5px;
+            margin-top: 5px;*/
             grid-row: 3/4;
             grid-column: 1/2;
          }
 
-         #ol3{
-            border: 1px solid green;
+         #recreativo{
+            /*border: 1px solid green;
             padding-left: 50px;
             margin-left: 25px;
-            margin-top: 5px;
-            grid-row: 4/11;
+            margin-top: 5px;*/
+            grid-row: 4/6;
             grid-column: 1/2;
-         }*/
+         }
+
+         img{
+            grid-row: 8/9;
+            grid-column: 1/2;
+         }
+
+
     </style>
 
     <meta name="description" content="Listado de hoteles disponibles."/>
@@ -190,60 +197,143 @@
                 </p>
             </article>
 
-            
+            <div class="filtros" id="alojamiento">
+                <h3>Tipo de alojamiento</h3>
+                <input type="checkbox" name="suscripcion" value="1" id="suscripcion"
+                    class="formItem sus" />Departamentos</br>
+                <input type="checkbox" name="suscripcion1" value="2" id="suscripcion1"
+                    class="formItem sus" />Villas</br>
+                <input type="checkbox" name="suscripcion2" value="3" id="suscripcion2"
+                    class="formItem sus" />Hoteles</br>
+                <input type="checkbox" name="suscripcion3" value="4" id="suscripcion3"
+                    class="formItem sus" />Pensiones</br>
+                <input type="checkbox" name="suscripcion3" value="5" id="suscripcion3"
+                    class="formItem sus" />Habitaciones en casas particulares</br>
+                <input type="checkbox" name="suscripcion3" value="6" id="suscripcion3"
+                    class="formItem sus" />Casas y chalets</br>
+                <input type="checkbox" name="suscripcion3" value="7" id="suscripcion3"
+                    class="formItem sus" />Bed and breakfasts</br>
+                <input type="checkbox" name="suscripcion3" value="8" id="suscripcion3"
+                    class="formItem sus" />Hostels</br>
+                    <input type="checkbox" name="suscripcion3" value="7" id="suscripcion3"
+                    class="formItem sus" />Moteles</br>
+                    <input type="checkbox" name="suscripcion3" value="8" id="suscripcion3"
+                    class="formItem sus" />Campamentos</br>
+                    <input type="checkbox" name="suscripcion3" value="7" id="suscripcion3"
+                    class="formItem sus" />Cabaña</br>
+                <input type="checkbox" name="suscripcion3" value="8" id="suscripcion3"
+                    class="formItem sus" />Todo incluido</br>
+            </div>
 
-            <!--<ol id="ol1" class="lista-filtros">
-                <h3>Tipos de alojamiento</h3>
-                <li>Departamentos</li>                
-                <li>Villas</li>
-                <li>Hoteles</li>
-                <li>Villas</li>
-                <li>Pensiones</li>
-                <li>Habitaciones en casa particulares</li>
-                <li>Casas y chalets</li>
-                <li>Bed and breakfasts</li>
-                <li>Hostels</li>
-            </ol>
-
-            <ol id="ol2" class="lista-filtros">
+            <div class="filtros" id="turistico">
                 <h3>Puntos turisticos</h3>
-                <li>Cerro Santa Ana</li>                
-                <li>Faro Cerro Santa Ana</li>
-                <li>Parque Seminario</li>
-                <li>Malecon 2000</li>
-            </ol>
+                <input type="checkbox" name="suscripcion" value="1" id="suscripcion"
+                    class="formItem sus" />Cerro Santa Ana</br>
+                <input type="checkbox" name="suscripcion1" value="2" id="suscripcion1"
+                    class="formItem sus" />Faro de Cerro Santa Ana</br>
+                <input type="checkbox" name="suscripcion2" value="3" id="suscripcion2"
+                    class="formItem sus" />Parque Seminario</br>
+                <input type="checkbox" name="suscripcion3" value="4" id="suscripcion3"
+                    class="formItem sus" />Malecon 2000</br>
+            </div>
 
-            <ol id="ol3" class="lista-filtros">
+            <div class="filtros" id="recreativo">
                 <h3>Actividades recreativas</h3>
-                <li>Hidromasaje</li>                
-                <li>Baño publico</li>
-                <li>Gimnasio</li>
-                <li>Sauna</li>
-                <li>Tours a pie</li>
-                <li>Entretenimiento nocturno</li>
-                <li>Sala de vapor</li>
-                <li>Happy hour</li>
-                <li>Pileta cubierta</li>
-                <li>Cenas tematicas</li>                
-                <li>Instalaciones de Spa</li>
-                <li>Recorrido de bares</li>
-                <li>Musica o espectaculo en vivo</li>
-                <li>Ping Pong</li>
-                <li>Karaoke</li>
-                <li>Masaje en pareja</li>
-                <li>Masaje de manos</li>
-                <li>Baño al aire libre</li>
-                <li>Servicio de maquillaje</li>                
-                <li>Paquetes de Spa</li>
-                <li>Tratamientos corporales</li>
-                <li>Exfoliacion corporal</li>
-                <li>Noches de peliculas</li>
-                <li>Baño turco</li>
-                <li>Zona privada de playa</li>
-                <li>Baños termales</li>
-            </ol>-->
-
+                <input type="checkbox" name="suscripcion" value="1" id="suscripcion"
+                    class="formItem sus" />Hidromasaje</br>
+                <input type="checkbox" name="suscripcion1" value="2" id="suscripcion1"
+                    class="formItem sus" />Baño publico</br>
+                <input type="checkbox" name="suscripcion2" value="3" id="suscripcion2"
+                    class="formItem sus" />Gimnasio</br>
+                <input type="checkbox" name="suscripcion3" value="4" id="suscripcion3"
+                    class="formItem sus" />Sauna</br>
+                <input type="checkbox" name="suscripcion3" value="5" id="suscripcion3"
+                    class="formItem sus" />Tours a pie</br>
+                <input type="checkbox" name="suscripcion3" value="6" id="suscripcion3"
+                    class="formItem sus" />Entretenimiento nocturno</br>
+                <input type="checkbox" name="suscripcion3" value="7" id="suscripcion3"
+                    class="formItem sus" />Sala de vapor</br>
+                <input type="checkbox" name="suscripcion3" value="8" id="suscripcion3"
+                    class="formItem sus" />Happy hour</br>
+                <input type="checkbox" name="suscripcion" value="1" id="suscripcion"
+                    class="formItem sus" />Pileta cubierta</br>
+                <input type="checkbox" name="suscripcion1" value="2" id="suscripcion1"
+                    class="formItem sus" />Cenas tematicas</br>
+                <input type="checkbox" name="suscripcion2" value="3" id="suscripcion2"
+                    class="formItem sus" />Instalaciones de Spa</br>
+                <input type="checkbox" name="suscripcion3" value="4" id="suscripcion3"
+                    class="formItem sus" />Recorrido de bares</br>
+                <input type="checkbox" name="suscripcion3" value="5" id="suscripcion3"
+                    class="formItem sus" />Musica o espectaculo envivo</br>
+                <input type="checkbox" name="suscripcion3" value="6" id="suscripcion3"
+                    class="formItem sus" />Ping Pong</br>
+                <input type="checkbox" name="suscripcion3" value="7" id="suscripcion3"
+                    class="formItem sus" />Karaoke</br>
+                <input type="checkbox" name="suscripcion3" value="8" id="suscripcion3"
+                    class="formItem sus" />Masaje de pareja</br>
+                <input type="checkbox" name="suscripcion" value="1" id="suscripcion"
+                    class="formItem sus" />Masaje de manos</br>
+                <input type="checkbox" name="suscripcion1" value="2" id="suscripcion1"
+                    class="formItem sus" />Baño al aire libre</br>
+                <input type="checkbox" name="suscripcion2" value="3" id="suscripcion2"
+                    class="formItem sus" />Servicio de maquillaje</br>
+                <input type="checkbox" name="suscripcion3" value="4" id="suscripcion3"
+                    class="formItem sus" />Paquetes de Spa</br>
+                <input type="checkbox" name="suscripcion3" value="5" id="suscripcion3"
+                    class="formItem sus" />Tratamientos corporales</br>
+                <input type="checkbox" name="suscripcion3" value="6" id="suscripcion3"
+                    class="formItem sus" />Exfolacion corporal</br>
+                <input type="checkbox" name="suscripcion3" value="7" id="suscripcion3"
+                    class="formItem sus" />Noches de peliculas</br>
+                <input type="checkbox" name="suscripcion3" value="8" id="suscripcion3"
+                    class="formItem sus" />Baño turco</br>
+                <input type="checkbox" name="suscripcion" value="1" id="suscripcion"
+                    class="formItem sus" />Zona provada de playa</br>
+                <input type="checkbox" name="suscripcion1" value="2" id="suscripcion1"
+                    class="formItem sus" />Baños termales</br>
+            </div>
+            <img class="Mapa" src="assets/Img/Mapa.jpeg" alt="Mapa">           
         </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+          <div class="footer-seccion">
+              <h1 class="logo">
+                  <a href="../index.html">
+                    <img src="../assets/logo.png" alt="Logo de Stay In" />
+                    Stay In
+                  </a>
+                </h1>
+            <p>
+              Encuentra asesoría para hospedarte en los mejores hoteles del país.
+            </p>
+          </div>
+          <div class="footer-seccion">
+            <h3>Enlaces</h3>
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="Hoteles.html">Hoteles</a></li>
+              <li><a href="Asesorias.html">Asesorías</a></li>
+              <li><a href="Acercade.html">Acerca de</a></li>
+              <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+          </div>
+          <div class="footer-seccion">
+            <h3>Redes sociales</h3>
+            <ul>
+              <li><a href="#" target="_blank">Facebook</a></li>
+              <li><a href="#" target="_blank">Instagram</a></li>
+              <li><a href="#" target="_blank">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-copy">
+          <p>© 2023 Stay In. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
