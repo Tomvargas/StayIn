@@ -21,6 +21,7 @@
         include("../../controller/registro_asesor.php");
         include("../../controller/eliminar_asesor.php");
     ?>
+    
     <script>
         function eliminar(){
             var respuesta = confirm("¿Estás seguro que deseas eliminar este registro?");
@@ -93,7 +94,7 @@
                         <td><?= $datos->correo ?></td>
                         <td> 
                             <a href="asesoresedit.php?id=<?= $datos->id?>" class="btn btn-small btn-warning"> <i class="fa-solid fa-pen-to-square"></i></a>
-                            <a onclick="eliminar()"  href="asesoresnew.php?id<?= $datos->id?>" class="btn btn-small btn-danger"> <i class="fa-solid fa-trash"></i></a>
+                            <a onclick="eliminar()"  href="asesoresnew.php?id=<?= $datos->id?>" class="btn btn-small btn-danger"> <i class="fa-solid fa-trash"></i></a>
                         </td>
 
 
