@@ -24,7 +24,7 @@ if(!empty($_POST["btnregistrar"])){
         //Verificar si se ha modificado el asesor
 
         if ($sql==1) {
-            header("Location:../view/asesores/asesoresnew.php");
+            header("Location:$../view/asesores/asesoresnew.php");
            
         } else {
             echo "<div class='alert alert-danger'>Ocurrió un error al modifcar al asesor</div>";
